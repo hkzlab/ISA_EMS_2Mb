@@ -66,7 +66,7 @@ All ICs are in DIP package.
 - U9: 74HCT139
 - U10: 74HCT32
 - U12: 74LS245 (You can substitude this for an HCT/ACT/F/ALS part)
-- U17: 74HCT139
+- U17: 74HCT138
 - U18, U19, U20, U21: 74HCT573
 - RN2: res. network, 10k, bussed, 5 pins
 - RN3: res. network, 10k, bussed, 9 pins.
@@ -76,6 +76,13 @@ All ICs are in DIP package.
 - C5, C6: 10uF / 50v electrolytic caps
 - Remaining caps: 16x 100nF, ceramic
 - ISA bracket: Keystone 9202, plus screws. You will have to cut a hole for the LED.
+
+## Known Issues
+
+I have received reports of this board being unstable when used with some homebrew PC clones, reports included the Xi8088 and NuXT. I have noted similar issues on a Micro8088. On the other hand, an all-CMOS board was tested fine on multiple AT clones I have.
+Replacing the following ICs with ones from the TTL family solved the issue for me: U7, U8, U9, U10, U11, U12.
+
+Note that, for increased stability, I use an ISA terminator with these homebrew computers.
 
 ## Credits
 
